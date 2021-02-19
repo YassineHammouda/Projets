@@ -1,0 +1,22 @@
+.d1,.d2,.d3{
+    background-image: url("../images/maison.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    text-align: justify;
+}
+
+.d1{
+    background-position: top left;
+    padding-left: 160px;
+}
+.d2{
+    background-position: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.d3{
+    background-position: bottom right;
+    padding-right: 150px;
+}

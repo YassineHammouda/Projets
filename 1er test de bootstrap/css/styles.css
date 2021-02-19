@@ -1,0 +1,30 @@
+header {
+  background: darkorange;
+  text-align: center;
+}
+
+
+
+
+#ligne1{
+  background: cornflowerblue;
+}
+#ligne2{
+  background: darkorange;
+  margin-top: 10px;
+}
+#ligne3{
+  background:chartreuse;
+  margin-top: 10px;
+  color: black;
+}
+aside {
+  background: crimson;
+  text-align: center;
+}
+
+footer {
+  margin-top: 10px;
+  background: mediumorchid;
+  text-align: center;
+}

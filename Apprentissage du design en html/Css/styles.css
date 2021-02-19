@@ -1,0 +1,57 @@
+body {
+  background-image: url(../Images/sport.jpg);
+  border-style: solid;
+  margin: 15px;
+  padding: 15px;
+  width: auto;
+  height: auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: justify;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+p {
+  margin: 20px;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+.title {
+  text-align: center;
+  margin-left: 20px;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px blue;
+}
+#namepage {
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px red;
+  color: black;
+}
+img {
+  border: 1px solid grey;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.c1 {
+  color: rgb(16, 32, 45);
+}
+.c2 {
+  color: rgba(16, 89, 28, 33);
+}
+.c3 {
+  color: #ff8657;
+}
+.j1,
+.j2,
+.j3,
+.j4 {
+  border: 5px dashed black;
+}

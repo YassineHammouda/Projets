@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ma Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>Header</header>
+
+    <main>
+      <aside>ASIDE1</aside>
+      <div class="bloc1">
+        <div class="b1">
+          <img src="../Projet Design/Images/nfl.jpg" />
+
+          <p>
+            Avec flex: initial, les éléments récupèrent les valeurs initiales
+            pour les différentes propriétés du modèle de boîte flexible. Cette
+            valeur permettra d'obtenir le même comportement que flex: 0 1 auto.
+            Ici, flex-grow vaut 0 et les éléments ne s'agrandiront pas au-delà
+            de la taille flex-basis. flex-shrink vaut 1 et les éléments pourront
+            rétrécir si besoin plutôt que de dépasser du conteneur. flex-basis
+            vaut auto et les éléments utiliseront donc la taille qui leur a été
+            définie sur l'axe principale ou la taille déterminée à partir du
+            contenu.
+          </p>
+          <img src="../Projet Design/Images/nba.jpg" />
+        </div>
+        <div class="b2">
+          <img src="../Projet Design/Images/nhl.jpg" />
+          <img src="../Projet Design/Images/mls.jpg" />
+          <img src="../Projet Design/Images/sport.jpg" />
+          <img src="../Projet Design/Images/nhl1.jpg" />
+        </div>
+        <div class="b3">
+          <img src="../Projet Design/Images/sport.jpg" />
+          <p>
+            On peut également utiliser la valeur flex-start afin que les
+            éléments soient alignés sur la ligne de début de l'axe secondaire,
+            la valeur flex-end afin que les éléments soient alignés sur la ligne
+            de fin de l'axe secondaire ou bien center pour les aligner au
+            centre. Vous pouvez utiliser les valeurs suivantes dans l'exemple
+            (on a donné un hauteur fixe au conteneur afin de pouvoir observer la
+            façon dont les éléments se déplacent à l'intérieur)Notez que la
+            prise en charge de ces valeurs par le navigateur est nuancée. Par
+            exemple, space-betweencertaines versions d'Edge n'ont jamais été
+            prises en charge et start / end / left / right ne sont pas encore
+            dans Chrome. MDN a des graphiques détaillés . Les valeurs les plus
+            sûres flex-start, flex-endet center. Il existe également deux mots
+            clés supplémentaires que vous pouvez associer à ces valeurs: safeet
+            unsafe. L'utilisation safegarantit que, quelle que soit la manière
+            dont vous effectuez ce type de positionnement, vous ne pouvez pas
+            pousser un élément de manière à ce qu'il s'affiche hors de l'écran
+            (par exemple, du haut) de telle sorte que le contenu ne puisse pas
+            également être défilé (appelé «perte de données») .
+          </p>
+          <ul>
+            <li>Nba</li>
+            <li>Mls</li>
+            <li>Nhl</li>
+            <li>Nfl</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside>ASIDE2</aside>
+    </main>
+
+    <footer>Pied de Pages</footer>
+  </body>
+</html>

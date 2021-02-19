@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+  <body>
+    <h1>Introduction à l'algorithme</h1>
+    <script>
+      /*let tablo = [9, 13, 11, 11, 2, 8.5, 8,15,12.5,16.5,4];
+                      let tablos=[];
+                      function moyNote(tab) {
+                        if (tab == 0) {
+                          return 0;
+                        }
+                        let somme = 0;
+                        let notes;
+                        for (notes = 0; notes < tab.length; notes++) {
+                          somme += tab[notes];
+                        }
+                        return somme / tab.length;
+                      }
+
+                      console.log(moyNote(tablo));
+                      console.log(moyNote(tablos)); */
+
+      let tableau = [16, 3.9, 2.3, 6, 5, 0.1, 19];
+      let tableaus = [33, 7, 9, 21.8];
+      let tableauss = [1, 3, 6, 18, 7.9, 12];
+      // correction exercice algo pour obtenir le nb le plus grand d'un tableau.
+      function valMax(tab) {
+        let i;
+
+        let max = tab[0];
+
+        for (i = 0; i < tab.length; i++) {
+          if (tab[i] > max) {
+            max = tab[i];
+          }
+        }
+        return max;
+      }
+
+      console.log(valMax(tableau));
+      console.log(valMax(tableaus));
+      console.log(valMax(tableauss));
+      // exercice algo trouver le nombre minimum.
+
+      function valMin(tab) {
+        let i;
+        let min = tab[0];
+        for (i = 0; i < tab.length; i++) {
+          if (tab[i] < min) {
+            min = tab[i];
+          }
+        }
+        return min;
+      }
+
+      console.log(valMin(tableau));
+      console.log(valMin(tableaus));
+      console.log(valMin(tableauss));
+
+      // exercice algo retourner position de la valeur
+      let tablu = [3, 6, 9.2, 8, 7, 1];
+      function position(tab, val) {
+        //--> on déclare un tableau avec deux paramètre car val est element que l'on cherche a retrouver
+        let i;
+
+        for (i = 0; i < tab.length; i++) {
+          if (val == tab[i]) {
+            //-->  le == est un comparateur de meme valeur ,si valeur est egal du cote de val et du tableau alors :
+            return i + 1; //--> on retourne i qui equivaut a notre valeur rechercher et on lui ajoute +1 pour ne pas commencer a 0 via le comptage de js.
+          }
+        }
+      }
+      console.log(position(tablu, 7)); //--> ici on teste notre fonction avec les parametre de la fonction et on rajoute la val chercher.
+      console.log(position(tablu, 8));
+
+      function positions(tab, val) {
+        let i;
+        for (i = 0; i < tab.length; i++) {
+          if (tab[i] == val) {
+            return i + 1;
+          }
+        }
+      }
+      console.log(positions(tablu, 8));
+      console.log(positions(tablu, 9.2));
+
+      function posit(tab, val) {
+        let i = 0;
+        while (i < tab.length) {
+          if (tab[i] == val) {
+            return i + 1;
+          }
+          i++;
+        }
+      }
+      console.log(posit(tablu, 8));
+      console.log(posit(tablu, 9.2));
+
+      function nbJour(mois, annee) {
+        if (mois == 2) {
+          if (annee % 4 == 0) {
+            return 29;
+          }
+          return 28;
+        }
+        let tab = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        return tab[mois - 1];
+      }
+      console.log(nbJour(2, 2024));
+
+      function nbsJour(mois, annee) {
+        switch (mois) {
+          case 1:
+            return 31;
+
+          case 2:
+            if (mois == 2) {
+              if (annee % 4 == 0) {
+                return 29;
+              }
+              return 28;
+            }
+
+          case 3:
+            return 31;
+
+          case 4:
+            return 30;
+
+          case 5:
+            return 31;
+
+          case 6:
+            return 31;
+
+          case 7:
+            return 30;
+
+          case 8:
+            return 31;
+
+          case 9:
+            return 30;
+
+          case 10:
+            return 31;
+
+          case 11:
+            return 30;
+
+          case 12:
+            return 31;
+        }
+        return tab[mois - 1];
+      }
+      console.log(nbsJour(12, 2024));
+
+      let word = "hello how are you ?";
+      let lk = "Programmation de logiciel";
+      let ww = "Le Js n est pas bien";
+      let ss = "abcd efgh icdf";
+      /* function inverseCar(mot){
+              let i;
+              let wor="";
+
+              for(i=mot.length-1;i>=0;i--){
+                wor+= mot[i];
+              }
+
+              return wor ;
+
+            }  */
+      /* console.log(inverseCar(word));
+            console.log(inverseCar(lk));
+      */
+      function nbMotInChaine(chain) {
+        let tab = chain.split(" ");
+        return tab.length;
+      }
+
+      console.log(nbMotInChaine(lk));
+      console.log(nbMotInChaine(word));
+
+      function egalMot(chain1, chain2) {
+        return nbMotInChaine(chain1) == nbMotInChaine(chain2);
+      }
+
+      console.log(egalMot(ss, lk));
+
+      function carreDe(a) {
+        return a ** 2;
+      }
+      console.log(carreDe(6));
+
+      function racinCar(a) {
+        return a ** (1 / 2);
+      }
+      console.log(racinCar(3));
+
+      function permiRect(a, b) {
+        return a * 2 + b * 2;
+      }
+      console.log(permiRect(4, 7));
+
+      function calSom(a, b) {
+        return a + b < 100;
+      }
+
+      console.log(calSom(45, 85));
+      console.log(calSom(10, 85));
+
+      function conHeur(a, b) {
+        return a * 3600 + b * 60;
+      }
+      console.log(conHeur(2, 50));
+      console.log(conHeur(8, 20));
+
+      function divis(a, b) {
+        return a % b == 0;
+      }
+
+      console.log(divis(4, 2));
+      console.log(divis(5, 2));
+      console.log(divis(8, 2));
+      console.log(divis(9, 6));
+
+      let trab = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+      let tabloin = ["hello", " ", "maniac", " ", "poucn", " ", "hdyeke"];
+      function invTabl(tab) {
+        let tabl = [];
+        for (i = tab.length - 1; i >= 0; i--) {
+          tabl.push(tab[i]);
+        }
+        return tabl;
+      }
+      console.log(invTabl(tabloin));
+      console.log(invTabl(trab));
+
+      let tables = [
+        {
+          nom: "Luc",
+          prenom: "Nolan",
+          dna: 35,
+          revenus: 2500,
+        },
+        {
+          nom: "Xavier",
+          prenom: "Bertrand",
+          dna: 65,
+          revenus: 4300,
+        },
+        {
+          nom: "Holoway ",
+          prenom: "Marcus",
+          dna: 25,
+          revenus: 1300,
+        },
+        { nom: "Wrench", prenom: "Sitara", dna: 18, revenus: 700 },
+      ];
+      function impot(revenus) {
+        switch (true) {
+          case revenus <= 1000:
+            return revenus * 0.05;
+          case revenus <= 2000:
+            return revenus * 0.07;
+          case revenus <= 3000:
+            return revenus * 0.11;
+          default:
+            return revenus * 0.15;
+        }
+      }
+      function secu(revenus) {
+        switch (true) {
+          case revenus <= 1000:
+            return revenus * 0.05;
+          case revenus <= 2000:
+            return revenus * 0.06;
+          case revenus <= 3000:
+            return revenus * 0.08;
+          default:
+            return revenus * 0.12;
+        }
+      }
+      function cat(dna) {
+        switch (true) {
+          case dna <=10:
+            return "Enfants";
+          case dna <=18:
+            return "Adolescents";
+          case dna <=45:
+            return "Jeunes";
+          default:
+            return "Vieux";
+        }
+      }
+      function infoTab(tab) {
+        let info = "";
+        for (i = 0; i < tab.length; i++) {
+          info +=
+            "Le nom est " +
+            tab[i].nom  +"\n"+ 
+            "Le prenom est "  +tab[i].prenom +" "+"\n"+
+            "Les impots sont de " +
+            impot(tab[i].revenus)  +"\n"+ // ici on a appeller la fonction qui a pour but de calculer la part d'impot.
+            "La secu est de " +
+            secu(tab[i].revenus)  +"\n"+// ici on a appeller la fonction qui a pour but de calculer la part de secu.
+            "La categorie d'age est " +
+            cat(tab[i].dna)+"\n";
+        }
+        return info;
+      }
+
+      console.log(infoTab(tables));
+    </script>
+  </body>
+</html>

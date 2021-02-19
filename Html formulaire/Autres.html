@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ma page</title>
+    <link rel="stylesheet" href="ind.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 style="text-align: center; text-decoration: underline">Formulaire</h1>
+
+      <!--Bien utiliser le chemin absolu-->
+    </div>
+    <div>
+      <p>Réponse</p>
+      <form>
+        <label for="Name">Nom:</label><br />
+        <input type="text" id="Name" name="Nom" disabled /><br />
+        <label for="Prename">Prénom:</label><br />
+        <input type="text" id="Prename" name="Prénom" /><br />
+
+        <br />
+        <input type="radio" id="male" name="gender" value="Homme" />
+        <label for="male">Homme</label>
+        <input type="radio" id="female" name="gender" value="Femme" />
+        <label for="female">Femme</label>
+        <br />
+        <label for="Email">Adresse Email:</label>
+        <br /><input type="email" id="Email" name="Email" disabled /><br />
+        <label for="Numbertel">Numéro de téléphone:</label><br />
+        <input type="text" id="username" name="username" /><br />
+        <label for="username">Identifiant:</label><br />
+        <input type="tel" id="Numbertel" name="Numbertel" /><br />
+        <label for="mdp">Mots de passe:</label><br />
+        <input type="password" id="mdp" name="mdp" /><br />
+        <br /><input type="submit" id="Valider" name="Valider" />
+        <input type="reset" id="Reset" name="Reset" /><br />
+
+        <br />
+        <label for="trancheage">Choisissez votre Tranche d'Age :</label>
+        <select id="trancheage" name="trancheage">
+          <option value="0-20">0-20 ans</option>
+          <option value="21-30">21-30 ans</option>
+          <option value="31-40">31-40 ans</option>
+          <option value="41ouplus">41 ans ou plus</option>
+        </select>
+
+        <br />
+        <br /><label for="avatar">Choisissez votre Fichier:</label><br />
+
+        <input
+          type="file"
+          id="avatar"
+          name="avatar"
+          accept="image/png,image/jpeg"
+        /><br />
+
+        <br /><label for="story">Envoyez nous un Message</label><br />
+
+        <textarea id="story" name="story" rows="3" cols="63">
+Bonjour....
+                    </textarea
+        ><br />
+
+        <br />
+        <label id="Recommad">Recommanderiez vous notre site ?</label>
+        <input type="checkbox" id="rcm" name="rcm" value="Oui" />
+        <label id="rcm">Oui</label>
+        <input type="checkbox" id="rcm2" name="rcm2" value="Non" disabled />
+        <label id="rcm2">Non</label>
+      </form>
+      <br />
+
+      <br />
+    </div>
+  </body>
+</html>

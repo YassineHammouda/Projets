@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+  <body>
+    <img
+      src="https://www.w3schools.com/images/w3jquery.gif"
+      width="100"
+      height="100"
+      class="mt-4 pl-4"
+    /><br /><br />
+
+    <button id="btn1" class="ml-4">Insert before</button>
+    <button id="btn2">Insert after</button>
+
+    <br />
+    <h1>Mon H1 <b>est en gras</b></h1>
+    <h2>Mon H2</h2>
+
+    <button onclick="modifTexteH1()">changer le texte du H1</button>
+    <button onclick="modifHtmlH1()">changer le HTML du H1</button>
+    <button onclick="changerlqt()">changer la Quantité</button>
+    <button onclick="hidebouton()">cacher le Bouton</button>
+
+    <h3>A demonstration of the :in-range selector.</h3>
+    <form onsubmit="valid()">
+      <input type="number" required />
+      <input type="submit" value="valider" />
+    </form>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/indexjs.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script>
+
+           $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("img").before("<b>Before</b>");
+        });
+
+        $("#btn2").click(function(){
+          $("img").after("<i>After</i>");
+        });
+      });
+      
+      $(document).ready(function () {
+              //---> formule pour afficher ou effacer un elements avec deux bouton différents
+              $("#eff1").click(function () {
+                $("h2").hide();
+              });
+              $("#aff1").click(function () {
+                $("h2").show();
+              });
+            });
+            function myMsg() {
+              alert("Hello World !!");
+            }
+            function appendText() {
+              var txt1 = "<p>Bonjour Lis cette phrase.</p>";
+              var txt2 = $("<p></p>").text("Bonjour Lis cette Ligne.");
+              var txt3 = document.createElement("p");
+              txt3.innerHTML = "Bonjour Combien il y a t'il de ligne.";
+              $("body").append(txt1, txt2, txt3);
+            }
+            /* exercice */
+
+            function modifTexteH1() {
+              $("h1").text("texte du H1 changé");
+            }
+
+            function modifHtmlH1() {
+              $("h1").html("<p> Le html du H1 changé </p>");
+              alert($("h1").html());
+            }
+            function valid() {
+              alert($("input[type=number]").val());
+            }
+            function changerlqt() {
+              $("input[type=number]").val(10);
+            }
+
+          // si on a besoinde faire un traitement sur un element du dom il faut utiliser le this -> par consequent il faut gerer l'evenement à l'interieur de jquery.
+          // ce qui implique l'utilisation de la syntaxe suivante :
+
+            $(document).ready(function () {
+              $("h1").click(function () {
+                alert("h1 va disparaitre");
+                $(this).hide();
+              });
+            });
+            // cette fonction ne fait rien
+
+            function hidebouton() {
+              let bouton = $("button");
+              console.log($(this));
+            }
+    </script>
+  </body>
+</html>
