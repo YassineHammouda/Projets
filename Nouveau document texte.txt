@@ -1,0 +1,11 @@
+on commencer a inserer les images  ensuite on donne des classe aux elements.
+des lors que la page se charge on masque les <p>.
+ensuite on fait en sorte que lorsque que l'on clique sur les images c'est celle ci qui s'affiche avec la description et ainsi de suite.
+
+
+col 1 --> grande image attrri src en dessous 4 img en eptite taille
+img p img p img p img p
+hide p de la col 
+2eme col 
+un p vide
+recupere attrr src
