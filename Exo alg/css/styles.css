@@ -1,4 +1,12 @@
 
+.btm{
+    background-color: blue !important;
+}
+
+.choix{
+    display: none;
+}
+/*
 img{
     width: 100px;
     height: 100px;
@@ -10,3 +18,4 @@ img:first-child{
 .image p{
     display: none;
 }
+

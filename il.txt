@@ -1,0 +1,26 @@
+creer une page commande
+on creer une liste deroulante :
+selectionnez le produit :
+
+1)sandwich
+2)pizza
+3)burger
+
+quand c sandwich on creer une case ingrediant case a cochez
+quand c pizza on creer un bouton radio 
+quand c burger on choisi la taille m l xl
+qt liste deroulante
+
+text area qui recupere les donnes
+
+evenement .change()
+
+click sur l element select et sa affiche le menu qui a disparu. 
+quand on clique sur l element choisi dans select c le menu cachez de celui ci qui saffiche 
+et prend en compte les eelements pour lafficher ds txt area
+
+
+id="sandw">Sandwichs</option>
+            <option value="Pizza"id="pizz">Pizza</option>
+            <option value="Tacos"id="taco">Tacos</option>
+

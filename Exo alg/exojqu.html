@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+  <body>
+    <form class="container bg-success text-warning">
+      <br />
+      <div class="form-group">
+        <br />
+        <label for="formGroupExampleInput">Produits</label>
+        <input
+          type="text"
+          class="form-control"
+          id="prod"
+          placeholder="Produits"
+        />
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Marque</label>
+        <input
+          type="text"
+          class="form-control"
+          id="marq"
+          placeholder="Marque"
+        />
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Modèle</label>
+        <input type="text" class="form-control" id="mod" placeholder="Modèle" />
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Specifications</label><br />
+        <textarea id="spec" name="spec" rows="5" cols="50"> </textarea>
+      </div>
+      <button type="button" class="btn btn-primary imp">Générer</button>
+      <button type="reset" value="Reset" class="btn btn-danger">
+        Réinitisaliser</button
+      ><br />
+      <br />
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Liste</label><br />
+        <textarea id="specs" name="spec" rows="5" cols="50"> </textarea>
+      </div>
+      <br />
+      <br />
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2 class="text-primary text-center">Commande Hamid sandwich</h2>
+    <div class="container">
+        <h5>Selectionnez votre produit:</h5>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Selectionnez votre produit</option>
+            <option value="Sandwichs" id="sandw">Sandwichs</option>
+            <option value="Pizza"id="pizz">Pizza</option>
+            <option value="Tacos"id="taco">Tacos</option>
+          </select>
+    </div>
+   
+    <br />
+    <br />
+    <div class="container bg-warning Sandwichs choix">
+      <h5>Selectionnez vos ingrédients pour votre sandwich :</h5>
+      <br />
+      <div class="row">
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Viande
+          </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Poisson
+          </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Fromage
+          </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Salade
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault"> Oeufs </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Tomates
+          </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Oignons
+          </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Raclette
+          </label>
+        </div>
+      </div>
+      <br />
+      <br />
+    </div>
+    <div class="container btn-danger text-dark Pizza choix">
+      <h5>Selectionnez votre Pizza :</h5>
+      <div class="row">
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+          />
+          <label class="form-check-label" for="flexRadioDefault1">
+            Special Hamid
+          </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2">
+            4 fromages
+          </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2">
+            Régina
+          </label>
+        </div>
+        <div class="col-md-3 form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2">
+            Napolitaine
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-success Tacos choix">
+      <br />
+      <h5>Selectionnez la taille de votre Tacos</h5>
+      <div class="row">
+        <div class="col-md-4 form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+          />
+          <label class="form-check-label" for="flexRadioDefault1"> M </label>
+        </div>
+        <div class="col-md-4 form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2"> L </label>
+        </div>
+        <div class="col-md-4 form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2"> XL </label>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-dark text-white">
+        <div class="row">
+            <label for="qtp">Quantités:</label>
+
+<input type="number" id="qtn" name="qtn"
+       min="10" max="10">
+        </div><br>
+        <div class="row">
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Détails de la commande</label><br />
+                <textarea id="lting" name="lting" rows="5" cols="50"> </textarea>
+              </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      $("button").click(function () {
+        let mp =
+          $("#prod").val() +
+          ", " +
+          $("#marq").val() +
+          "\n" +
+          $("#prod").val() +
+          ", " +
+          $("#mod").val() +
+          "\n" +
+          $("#marq").val() +
+          ", " +
+          $("#mod").val() +
+          "\n" +
+          $("#marq").val() +
+          ", " +
+          $("#mod").val() +
+          ", " +
+          $("#spec").val();
+        $("#specs").val(mp);
+      });
+
+      $("select").change(function () {
+        let produi=$(this).val();
+        $(".choix").hide();
+        $("."+produi).show();
+        
+      });
+
+      
+     
+      
+        
+
+    </script>
+  </body>
+</html>

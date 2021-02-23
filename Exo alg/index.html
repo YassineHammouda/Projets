@@ -19,29 +19,32 @@
           <img src="images/ju.jpg" id="mgp" /><br />
           <br />
           <img src="images/ju.jpg" class="img1" />
-          <p>jupiter</p>
+          <p>Jupiter</p>
           <img src="images/jup.jpg" class="img1" />
-          <p>ju</p>
+          <p>Jupiter 1</p>
           <img src="images/ura.jpg" class="img1" />
-          <p>uran</p>
+          <p>Uranus</p>
           <img src="images/Pluton.jpg" class="img1" />
-          <p>pluto</p>
+          <p>Pluton</p>
         </div>
         <div class="col-md-2">
           <p class="pa1"></p>
         </div>
       </div>
     </div>
-
+    
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
-        
-      $("img").click(function () {
-        
+      $(document).ready(function(){
+        $(".pa1").text($("p:first").text());});
+
+        $("img").click(function () {
         $("#mgp").attr("src", $(this).attr("src"));
         $(".pa1").text($(this).next().text());
 
+
+      
       });
     </script>
   </body>
