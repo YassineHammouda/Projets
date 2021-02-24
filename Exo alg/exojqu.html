@@ -60,15 +60,15 @@
     <br />
     <h2 class="text-primary text-center">Commande Hamid sandwich</h2>
     <div class="container">
-        <h5>Selectionnez votre produit:</h5>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Selectionnez votre produit</option>
-            <option value="Sandwichs" id="sandw">Sandwichs</option>
-            <option value="Pizza"id="pizz">Pizza</option>
-            <option value="Tacos"id="taco">Tacos</option>
-          </select>
+      <h5>Selectionnez votre produit:</h5>
+      <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="Sandwichs" id="sandw">Sandwichs</option>
+        <option value="Pizza" id="pizz">Pizza</option>
+        <option value="Tacos" id="taco">Tacos</option>
+      </select>
     </div>
-   
+
     <br />
     <br />
     <div class="container bg-warning Sandwichs choix">
@@ -79,7 +79,7 @@
           <input
             class="form-check-input"
             type="checkbox"
-            value=""
+            value="Viande"
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
@@ -90,7 +90,7 @@
           <input
             class="form-check-input"
             type="checkbox"
-            value=""
+            value="Poisson"
             id="flexCheckChecked"
             checked
           />
@@ -102,7 +102,7 @@
           <input
             class="form-check-input"
             type="checkbox"
-            value=""
+            value="Fromage"
             id="flexCheckChecked"
             checked
           />
@@ -114,7 +114,7 @@
           <input
             class="form-check-input"
             type="checkbox"
-            value=""
+            value="Salade"
             id="flexCheckChecked"
             checked
           />
@@ -128,7 +128,7 @@
           <input
             class="form-check-input"
             type="checkbox"
-            value=""
+            value="Oeufs"
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault"> Oeufs </label>
@@ -137,7 +137,7 @@
           <input
             class="form-check-input"
             type="checkbox"
-            value=""
+            value="Tomates"
             id="flexCheckChecked"
             checked
           />
@@ -149,8 +149,8 @@
           <input
             class="form-check-input"
             type="checkbox"
-            value=""
-            id="flexCheckChecked"
+            value="Ognions"
+            id="Ognions"
             checked
           />
           <label class="form-check-label" for="flexCheckChecked">
@@ -161,7 +161,7 @@
           <input
             class="form-check-input"
             type="checkbox"
-            value=""
+            value="Raclette"
             id="flexCheckChecked"
             checked
           />
@@ -178,10 +178,11 @@
       <div class="row">
         <div class="col-md-3 form-check">
           <input
-            class="form-check-input"
+            class="form-check-input radiopiz"
             type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
+            name="Pizza"
+            id="Special Hamid"
+            value="Special Hamid"
           />
           <label class="form-check-label" for="flexRadioDefault1">
             Special Hamid
@@ -189,10 +190,11 @@
         </div>
         <div class="col-md-3 form-check">
           <input
-            class="form-check-input"
+            class="form-check-input radiopiz"
             type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
+            name="Pizza"
+            id="4 fromages"
+            value="4 fromages"
             checked
           />
           <label class="form-check-label" for="flexRadioDefault2">
@@ -201,10 +203,11 @@
         </div>
         <div class="col-md-3 form-check">
           <input
-            class="form-check-input"
+            class="form-check-input radiopiz"
             type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
+            name="Pizza"
+            id="Régina"
+            value="Régina"
             checked
           />
           <label class="form-check-label" for="flexRadioDefault2">
@@ -213,10 +216,11 @@
         </div>
         <div class="col-md-3 form-check">
           <input
-            class="form-check-input"
+            class="form-check-input radiopiz"
             type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
+            name="Pizza"
+            id="Napolitaine"
+            value="Napolitaine"
             checked
           />
           <label class="form-check-label" for="flexRadioDefault2">
@@ -231,29 +235,32 @@
       <div class="row">
         <div class="col-md-4 form-check">
           <input
-            class="form-check-input"
+            class="form-check-input radiotac"
             type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
+            name="Tacos"
+            id="M"
+            value="M"
           />
           <label class="form-check-label" for="flexRadioDefault1"> M </label>
         </div>
         <div class="col-md-4 form-check">
           <input
-            class="form-check-input"
+            class="form-check-input radiotac"
             type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
+            name="Tacos"
+            id="L"
+            value="L"
             checked
           />
           <label class="form-check-label" for="flexRadioDefault2"> L </label>
         </div>
         <div class="col-md-4 form-check">
           <input
-            class="form-check-input"
+            class="form-check-input radiotac"
             type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
+            name="Tacos"
+            id="XL"
+            value="XL"
             checked
           />
           <label class="form-check-label" for="flexRadioDefault2"> XL </label>
@@ -261,21 +268,21 @@
       </div>
     </div>
     <div class="container bg-dark text-white">
-        <div class="row">
-            <label for="qtp">Quantités:</label>
+      <div class="row">
+        <label for="qtp">Quantités:</label>
 
-<input type="number" id="qtn" name="qtn"
-       min="10" max="10">
-        </div><br>
-        <div class="row">
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Détails de la commande</label><br />
-                <textarea id="lting" name="lting" rows="5" cols="50"> </textarea>
-              </div>
+        <input type="number" id="qtn" name="qtn" min="1" max="10" />
+        <button type="button" class="btn btn-primary butval">Valider</button>
+      </div>
+      <br />
+      <div class="row">
+        <div class="form-group" id="detcom">
+          <label for="formGroupExampleInput2">Détails de la commande</label
+          ><br />
+          <textarea id="artex" name="lting" rows="5" cols="50"> </textarea>
         </div>
-        
+      </div>
     </div>
-    
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -303,17 +310,35 @@
       });
 
       $("select").change(function () {
-        let produi=$(this).val();
+        let com, x, y, qtet, commentaire;
+
+        let produi = $(this).val();
         $(".choix").hide();
-        $("."+produi).show();
-        
+        $("." + produi).show();
+        $("#artex").val(produi);
+        $(":checkbox").click(function () {
+          let detC = [];
+          $(":checkbox" + ":checked").each(function () {
+            com = $(this).val();
+            detC.push(com);
+            commentaire = detC;
+          });
+        });
+        $(".radiopiz").click(function () {
+          x = $(this).val();
+          commentaire = x;
+        });
+        $(".radiotac").click(function () {
+          y = $(this).val();
+          commentaire = y;
+        });
+        $(".butval").click(function () {
+          qtet = $("#qtn").val();
+          $("#artex").val(
+            "Votre commande est " + qtet + "  " + produi + " " + commentaire
+          );
+        });
       });
-
-      
-     
-      
-        
-
     </script>
   </body>
 </html>
