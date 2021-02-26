@@ -1,0 +1,33 @@
+stVersionning
+
+1)
+
+
+projets 1
+
+qui contient le projet 1 : index.html 
+avec la nouvelle version on souhaite ajouter de nouveaux elements donc :header.html , slide.html contacts.html qui se rajoute a index.html
+
+
+on va tout sauvegarder sur un site de versionning et de depot sur git et github.
+
+aller dossier locale + clic droit+ git bash here
+
+1)ensuite creation d'un dépôt git
+taper git init dans la console
+ 
+2)ajout de fichier à  la stage area
+git add .
+
+3)s'assurer de la prise en compte avec la commande : git status
+
+4) ajouter depot distant : git remote add origin https://github.com/HammoudaYassine/Projet.git
+
+5)attribuer un nom à la version : git commit -m "ajout de fichiers"
+
+6)upload des changement sur le depot : git push+copier la commande afficher sur le terminal.
+
+
+
+cloner un fichier en reseau git clone et le lien du fichier reseau.
+

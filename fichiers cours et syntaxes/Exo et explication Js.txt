@@ -1,0 +1,466 @@
+/*valeur ne change pas
+const x = 10;
+console.log(x);
+// valeur qui peut changer
+let y = 20;
+console.log(y);
+y = 41;
+console.log(y);
+let z = y % 4;
+console.log(z);
+y++;
+console.log(y);
+z--;
+console.log(z);
+console.log("la valeur de y est: " + y);
+y += 11;
+console.log(y);
+y -= 3;
+console.log(y);*/
+
+/* pour mettre en quote dans une phrase sans que cela ferme la variable ex: let x="mot""louis";hors il va comprendre que la variable x est seulement le "mot".*/
+/*et chaine = "chaine \"mot en quote\" reste de la chaine";
+console.log(chaine);
+
+chaine='It\'s a good day';
+console.log(chaine);
+
+chaine="Baddy or \\ not baddy";
+console.log(chaine);
+
+dossier="dossier\\mesimages\\images.png";
+console.log(dossier);
+dossier="dossier\mesimages\images.png";
+console.log(dossier);
+dossier="dossier\nmesimages\nimages.png";
+console.log(dossier);
+
+chaine="Premiere ligne\nDeuxieme ligne\n";
+console.log(chaine);
+
+var x = 3.14;
+var y = 3; 
+
+
+//Objet.attribut  //exemple Voiture.nbRoues
+
+//Objet.method() //exemple Voiture.rouler()
+
+//notation Json (JavaScript Object Notation)
+*/
+/*
+let person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
+console.log(person.firstName);
+console.log(person.id);
+console.log(person.fullName());
+*/
+/*function afficherMessage() {
+    console.log("Baddy");
+}
+
+afficherMessage();
+
+function somme(a,b)
+{
+    console.log(a+b);
+}
+somme (2,3);
+somme (6,12);*/
+/*
+function sommeReturn(a,b)
+{
+    return(a+b);
+    
+}
+let x=sommeReturn(2,3);
+console.log(x);
+
+function sommeReturn(a,b)
+{
+    return(a+b);
+    
+}
+let y=sommeReturn(6,12);
+console.log(y);
+
+
+
+function sommeReturn(a,b){
+    return(a+b);
+}
+
+let val1=Math.random()*10;
+let val2=Math.random()*10;
+let s=sommeReturn(val1,val2);
+
+console.log(val1);
+console.log(val2);
+console.log(s);
+// Math.floor permet d'avoir une variable entiere enelève les décimales
+let baddy=Math.floor(Math.random()*10);
+console.log(baddy);
+
+*/
+/* function (maFonction "on nomme sa fonction")(a,b on indique les paramètres){on affiche un return ou autre avec les paramètre return(a,b)} on declare la variable  on verifie avec le boolean on affiche un console log*/
+
+function maFonction(x, y) {
+  return x == y;
+}
+console.log(maFonction(12, 41));
+
+function maFonction1(a, b) {
+  return a > b;
+}
+console.log(maFonction1(5, 9));
+
+function maFonction2(a, b) {
+  return a < b;
+}
+console.log(maFonction2(25, 89));
+
+/*
+exeception boolean a retenir
+
+verything Without a "Value" is False
+
+The Boolean value of 0 (zero) is false:
+var x = 0;
+Boolean(x);       // returns false
+
+The Boolean value of -0 (minus zero) is false:
+var x = -0;
+Boolean(x);       // returns false
+
+The Boolean value of "" (empty string) is false:
+var x = "";
+Boolean(x);       // returns false
+
+The Boolean value of undefined is false:
+var x;
+Boolean(x);       // returns false
+
+The Boolean value of null is false:
+var x = null;
+Boolean(x);       // returns false
+
+The Boolean value of false is (you guessed it) false:
+var x = false;
+Boolean(x);       // returns false
+
+The Boolean value of NaN is false:
+var x = 10 / "H";
+Boolean(x);       // returns false
+
+
+x = 1; // entier
+y = 1.0; //eq 1 = entier
+x===y; egalite et meme type
+
+x ===y --> true
+z=1.2, -->float
+x===z -->false
+
+integer n'est pas egale a float
+
+*/
+/*const chaine = " "; //ici la valeur est true car un espace entre les doubles quote est un caractère
+console.log(Boolean(chaine));
+
+/*Operator	Description	Comparing	Returns	Try it
+
+x=5
+==	equal to	
+
+x == 8	false	
+x == 5	true	
+x == "5"	true
+
+===	equal value and equal type	
+
+x === 5	true	
+x === "5"	false	
+
+!=	not equal	
+
+x != 8	true	
+!==	not equal value or not equal type	
+
+x !== 5	false	
+x !== "5"	true	
+x !== 8	true	
+
+>	greater than	
+
+x > 8	false	
+<	less than	
+
+x < 8	true	
+>=	greater than or equal to	
+
+x >= 8	false	
+<=	less than or equal to	
+
+x <= 8	true */
+/*
+a=true
+console.log(!a); // false
+
+a!=b  a=true ;b=false // true
+
+a!=b  a=false ;b=false // false
+
+!== // differentes valeur ou de types different
+
+1==="1"; // --> false
+
+1!=="1";// "1" --> chaine de caractère// --> true
+
+/* 
+&& : and => ET
+T&&T => true 
+T&&F => false
+F&&F => false
+
+|| : OR => OU
+T||T => true
+T||F => true
+F||F => false
+
+operateur ternary
+a = true ;
+a == true ? x = "true" (si vrai) : x = "false"; (si faux)
+
+a=5
+b=10 
+a<b ? x="inferieur" : x="superieur";
+
+test ? cas vrai : cas faux
+
+
+
+Given that x = 6 and y = 3, the table below explains the logical operators:
+
+Operator	Description	Example
+
+&&	and	(x < 10 && y > 1) is true	
+
+||	or	(x == 5 || y == 5) is false	
+
+!	not	!(x == y) is true
+*/
+
+/* les conditions avec if/else
+if(condition){
+  traitement 1
+}
+else
+{
+  traitement 2
+}
+
+*/
+/*let greeting; on declare la variable ou les variab les
+hour = 9;
+/* ensuite on mets en place le if avec la condition
+if(hour < 18){
+  greeting = "Good day"
+}
+else{
+  greeting = "Good evening"
+}
+console.log(greeting);
+*/
+
+/*let greeting ;
+time = 9;
+
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+console.log(greeting); */
+
+/*function maFonctiona(hour){
+  
+  if (hour < 10) {
+    greeting = "Good morning";
+  } else if (hour < 20) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+  return greeting;
+}
+
+console.log(maFonctiona(10));
+console.log(maFonctiona(20));
+console.log(maFonctiona(22));
+*/
+
+function ageFonction(age) {
+  let phrase = "";
+  if (age <= 10) {
+    phrase = "enfants";
+  } else if (age <= 15) {
+    phrase = "adolescent";
+  } else if (age <= 20) {
+    phrase = "jeune";
+  } else if (age <= 45) {
+    phrase = "adulte";
+  } else if (age <= 100) {
+    phrase = "senior";
+  }
+  return phrase;
+}
+
+console.log(ageFonction(8));
+console.log(ageFonction(14));
+console.log(ageFonction(16));
+console.log(ageFonction(22));
+console.log(ageFonction(55));
+
+/*
+utilisez l' switch instruction pour sélectionner l'un des nombreux blocs de code à exécuter.
+
+Syntaxe
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+exemple : 
+let hour = 9;
+
+switch (hour){
+  case 5 : "good afternoon !" si la valeur de hour est de 5 alors le message affiché est "good afternoon !"
+  console.log("good afternoon !");
+  break ;
+  case 9 : "good morning !" si la valeur de hour est de 9 alors le message affiché est "good morning !"
+  console.log("good morning !");
+  break;
+  default : "Good evening !!" si la valeur de hour n'est pas celle ci dessus   alors le message affiché est Good evening !!"
+  console.log("Good evening !!"); 
+}
+  
+Blocs de code communs
+Parfois, vous souhaiterez que différents cas de commutation utilisent le même code.
+
+
+exemple : 
+let hour = 9;
+
+switch (hour){
+  case 4 :
+  case 5 : "good afternoon !" si la valeur de hour est de 5  ou de 4 alors le message affiché est "good afternoon !"
+  console.log("good afternoon !");
+  break ;
+  case 8 :
+  case 9 : "good morning !" si la valeur de hour est de 9 ou de 8 alors le message affiché est "good morning !"
+  console.log("good morning !");
+  break;
+  default : "Good evening !!" si la valeur de hour n'est pas celle ci dessus   alors le message affiché est Good evening !!"
+  console.log("Good evening !!"); 
+}
+
+
+Comparaison stricte
+Les cas de commutation utilisent une comparaison stricte (===).
+
+Les valeurs doivent être du même type pour correspondre.
+
+Une comparaison stricte ne peut être vraie que si les opérandes sont du même type.
+
+Dans cet exemple, il n'y aura pas de correspondance pour x:
+
+Exemple
+var x = "0";
+switch (x) {
+  case 0:
+    text = "Off";
+    break;
+  case 1:
+    text = "On";
+    break;
+  default:
+    text = "No value found";
+}
+
+
+Boucles JavaScript
+Les boucles sont pratiques, si vous voulez exécuter le même code encore et encore, à chaque fois avec une valeur différente.
+
+C'est souvent le cas lorsque vous travaillez avec des tableaux:
+
+Au lieu d'écrire:
+text += cars[0] + "<br>";
+text += cars[1] + "<br>";
+text += cars[2] + "<br>";
+text += cars[3] + "<br>";
+text += cars[4] + "<br>";
+text += cars[5] + "<br>";
+Tu peux écrire:
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+Différents types de boucles
+JavaScript prend en charge différents types de boucles:
+
+for - parcourt un bloc de code plusieurs fois
+for/in - boucle sur les propriétés d'un objet
+for/of - boucle sur les valeurs d'un objet itérable
+while - boucle sur un bloc de code alors qu'une condition spécifiée est vraie
+do/while - boucle également à travers un bloc de code tant qu'une condition spécifiée est vraie
+La boucle For
+La forboucle a la syntaxe suivante:
+
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+L'instruction 1 est exécutée (une fois) avant l'exécution du bloc de code.
+
+L'instruction 2 définit la condition d'exécution du bloc de code.
+
+L'instruction 3 est exécutée (à chaque fois) après l'exécution du bloc de code.
+
+Exemple
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+À partir de l'exemple ci-dessus, vous pouvez lire:
+
+L'instruction 1 définit une variable avant le début de la boucle (var i = 0).
+
+L'instruction 2 définit la condition d'exécution de la boucle (i doit être inférieur à 5).
+
+L'instruction 3 augmente une valeur (i ++) chaque fois que le bloc de code de la boucle a été exécuté
+
+exemple boucle :
+let text = "";
+let i;
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "br" ;
+
+  
+}
+document.getElementById("demo").innerHTML = text;
+
+
+*/

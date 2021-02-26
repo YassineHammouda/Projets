@@ -1,0 +1,9 @@
+https://www.w3schools.com/cssref/default.asp
+https://www.w3schools.com/cssref/css3_browsersupport.asp
+https://www.w3schools.com/cssref/css_selectors.asp
+https://www.w3schools.com/cssref/css_functions.asp
+https://www.w3schools.com/cssref/css_ref_aural.asp
+https://www.w3schools.com/cssref/css_default_values.asp
+https://www.w3schools.com/cssref/css_colors_legal.asp
+https://www.w3schools.com/cssref/css_colors.asp
+https://www.w3schools.com/css/default.asp
