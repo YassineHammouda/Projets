@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Affichage</title>
+  </head>
+  <body onload="requete()">
+    <br />
+
+    <div class="container-fluid">
+        <div class="row">  
+      <div class="row col-md-6" id="info"></div>
+      <div class="row col-md-6" id="phot"></div>
+    </div>
+      
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+          function genTab(tablo) {
+          let chaine = "";
+          let i;
+          for (i = 0; i < 10; i++) {
+            chaine +=
+            '<div class="card col-md-3"><h2>' +
+              tablo[i].id +
+              '</h2><div class="card-body"><h5 class="card-title">' +
+              tablo[i].title +
+              "</h5>";
+            chaine +=
+              '<button class="btn btn-primary aff" id="' +
+              tablo[i].id +
+              '">Afficher images</button ></div></div>';
+
+          }
+          return chaine;
+        };
+
+        
+            
+        
+        
+          
+
+
+        function requete() {
+            let request = $.ajax({
+            url: "https://jsonplaceholder.typicode.com/albums",
+            method: "GET",
+            dataType: "json",
+          });
+
+
+
+
+          request.done(function (response) {
+            let tablo=[];
+            $.each(response, function () {
+                tablo.push({id:this.id, title:this.title,}) ;
+          });
+          $("#info").html(genTab(tablo));
+          imags();
+
+      });
+
+          request.fail(function (http_error) {
+            //Code à jouer en cas d'éxécution en erreur du script du PHP
+
+            let server_msg = http_error.responseText;
+            let code = http_error.status;
+            let code_label = http_error.statusText;
+            alert("Erreur " + code + " (" + code_label + ") : " + server_msg);
+          });
+        }
+        function imags() {
+            
+            $(".aff").click(function(){
+                let imLien= $(this).attr("id");
+                let request = $.ajax({
+          url: "https://jsonplaceholder.typicode.com/albums/"+imLien+"/photos",
+          method: "GET",
+          dataType: "json",
+        });
+
+        request.done(function (response) {
+          //traitement
+          let mgs = "";
+            $.each(response, function () {
+              mgs += "<img src=" + this.thumbnailUrl + "/>";
+            });
+            $("#phot").html(mgs);
+    });
+        request.fail(function (http_error) {
+          //Code à jouer en cas d'éxécution en erreur du script du PHP
+
+          let server_msg = http_error.responseText;
+          let code = http_error.status;
+          let code_label = http_error.statusText;
+          alert("Erreur " + code + " (" + code_label + ") : " + server_msg);
+        });
+                
+          });
+          
+         
+      };
+    </script>
+  </body>
+</html>
