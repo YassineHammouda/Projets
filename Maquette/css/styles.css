@@ -1,0 +1,47 @@
+header {
+  max-height: 100px !important;
+}
+
+header img {
+  width: 150px;
+  height: 100px;
+}
+
+header button {
+  max-height: 50px;
+}
+.nav-link {
+  color: #4a6a8a;
+}
+header i {
+  color: #9d9da3;
+}
+.imb {
+  background-image: url(../images/doc.jpg);
+  min-height: 400px;
+}
+.imb form {
+}
+.clisp {
+  min-height: 400px;
+  background-color: aqua;
+}
+
+.clisp img{
+    max-height:150px;
+    max-width:150px;
+}
+
+.bod{
+    /* background-color: #F8F9FA; */
+    
+}
+.bod p{
+    font-style: italic;
+    color: grey;
+    font-size: 15px;
+}
+.bod img{
+    max-height: 150px;
+    max-width: 150px;
+}
