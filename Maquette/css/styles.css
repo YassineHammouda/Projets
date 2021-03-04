@@ -16,32 +16,172 @@ header button {
 header i {
   color: #9d9da3;
 }
-.imb {
+.sdma {
   background-image: url(../images/doc.jpg);
   min-height: 400px;
 }
-.imb form {
+.fo {
+  justify-content: center;
 }
+
 .clisp {
-  min-height: 400px;
-  background-color: aqua;
+  min-height: 300px;
+  justify-content: center;
+}
+.clisp h3 {
+  color: #272b41;
+}
+.clisp p {
+  color: #98abc6;
+  font-size: 14px;
+}
+.cs{
+  justify-content:center;
+}
+.cs img.rounded-circle {
+  border: 1px solid skyblue;
+}
+.image_outer_container .green_icon {
+  background-color: #4cd137;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  height: 30px;
+  width: 30px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.carousel img {
+  max-height: 100px;
+}
+#myCarousel {
+  width: 100%;
+  justify-content: right;
+  bottom: -60px;
+  margin-left: 100px;
+}
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -40px;
 }
 
-.clisp img{
-    max-height:150px;
-    max-width:150px;
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+  background: #a3a3a3;
+
+  width: 5px;
+  height: 5px;
+  margin-top: 50px;
 }
 
-.bod{
-    /* background-color: #F8F9FA; */
-    
+.blog .carousel-indicators .active {
+  background: #707070;
 }
-.bod p{
-    font-style: italic;
-    color: grey;
-    font-size: 15px;
+.clisp img {
+  max-height: 100px;
+  max-width: 100px;
 }
-.bod img{
-    max-height: 150px;
-    max-width: 150px;
+.c3 {
+  background: #f8f9fa;
+}
+.c3 .bop {
+  color: #a3a3a3;
+}
+.c3 .bok {
+  font-size: 14px;
+}
+.val {
+  color: green;
+}
+.eto {
+  color: yellow;
+}
+.gri {
+  color: gainsboro;
+}
+.bod {
+  background-color: #f8f9fa;
+
+  min-height: 500px;
+}
+.bod p {
+  font-style: italic;
+  color: grey;
+  font-size: 15px;
+}
+
+.blogs .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -40px;
+  color: cyan;
+}
+
+/* The colour of the indicators */
+.blogs .carousel-indicators li {
+  background: #a3a3a3;
+  border-radius: 1%;
+  width: 5px;
+  height: 5px;
+}
+
+.blogs .carousel-indicators .active {
+  background: #707070;
+}
+#blogsCarousel {
+  justify-content: right !important;
+}
+.card {
+  display: flex;
+  justify-content: center;
+}
+.im{
+  max-width: 35px;
+}
+.bn {
+  background-color: #f8f9fa;
+}
+.btt {
+  justify-content: center;
+}
+.car {
+  justify-content: center;
+}
+
+footer {
+  color: white;
+  font-size: 11px;
+}
+
+#lt1 {
+  justify-content: right;
+}
+#lt1 li {
+  background-color: transparent;
+  border: none;
+}
+.indicateurs{
+  bottom: -35px !important;
+}
+.indicateurs li{
+  background-color: #1f72bb !important;
+  border-radius: 50% !important;
+  width: 10px !important;
+height: 10px !important;
+}
+
+.degrade {
+
+  display: block;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #1e5799 0%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #1e5799 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #1e5799 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }

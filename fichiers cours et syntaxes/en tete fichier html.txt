@@ -22,3 +22,297 @@
 <script></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+<div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img
+                          src="images/6.png"
+                          class="img-responsive img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="thumb-content">
+                        <h5>Ruby Perrin<i class="fas fa-check-circle"></i></h5>
+                        <p class="item-price">
+                          BDS-Periodontology and Oral<br />Implantology,Bds
+                        </p>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div
+          id="multi-item-example"
+          class="carousel slide carousel-multi-item col-md-10"
+          data-ride="carousel"
+        >
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"
+              ><i class="fas fa-chevron-left"></i
+            ></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"
+              ><i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+          <!--/.Controls-->
+
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#multi-item-example"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+          </ol>
+          <!--/.Indicators-->
+
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <div class="col-md-2" style="float: left">
+                <div class="card mb-2">
+                  <img
+                    class="card-img-top"
+                    src="images/6.png"
+                    class="img-responsive img-fluid"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Ruby Perrin<i class="fas fa-check-circle"></i>
+                    </h5>
+                    <p class="card-text">
+                      BDS-Periodontology and Oral<br />Implantology,Bds
+                    </p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <i class="fas fa-map-marker-alt"> Florida Usa</i>
+                    <i class="fas fa-clock"> Available on Fri,22 Mar</i>
+                    <i class="fas fa-money-bill-wave"> $300-$1000</i>
+                    <a href="#" class="btn btn-outline-primary">View Profil</a>
+                    <a href="#" class="btn btn-primary">Book now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2" style="float: left">
+                <div class="card mb-2">
+                  <img
+                    class="card-img-top"
+                    src="images/6.png"
+                    class="img-responsive img-fluid"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Ruby Perrin<i class="fas fa-check-circle"></i>
+                    </h5>
+                    <p class="card-text">
+                      BDS-Periodontology and Oral<br />Implantology,Bds
+                    </p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <i class="fas fa-map-marker-alt"> Florida Usa</i>
+                    <i class="fas fa-clock"> Available on Fri,22 Mar</i>
+                    <i class="fas fa-money-bill-wave"> $300-$1000</i>
+                    <a href="#" class="btn btn-outline-primary">View Profil</a>
+                    <a href="#" class="btn btn-primary">Book now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2" style="float: left">
+                <div class="card mb-2">
+                  <img
+                    class="card-img-top"
+                    src="images/6.png"
+                    class="img-responsive img-fluid"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Ruby Perrin<i class="fas fa-check-circle"></i>
+                    </h5>
+                    <p class="card-text">
+                      BDS-Periodontology and Oral<br />Implantology,Bds
+                    </p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <i class="fas fa-map-marker-alt"> Florida Usa</i>
+                    <i class="fas fa-clock"> Available on Fri,22 Mar</i>
+                    <i class="fas fa-money-bill-wave"> $300-$1000</i>
+                    <a href="#" class="btn btn-outline-primary">View Profil</a>
+                    <a href="#" class="btn btn-primary">Book now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2" style="float: left">
+                <div class="card mb-2">
+                  <img
+                    class="card-img-top"
+                    src="images/6.png"
+                    class="img-responsive img-fluid"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Ruby Perrin<i class="fas fa-check-circle"></i>
+                    </h5>
+                    <p class="card-text">
+                      BDS-Periodontology and Oral<br />Implantology,Bds
+                    </p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <i class="fas fa-map-marker-alt"> Florida Usa</i>
+                    <i class="fas fa-clock"> Available on Fri,22 Mar</i>
+                    <i class="fas fa-money-bill-wave"> $300-$1000</i>
+                    <a href="#" class="btn btn-outline-primary">View Profil</a>
+                    <a href="#" class="btn btn-primary">Book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.First slide-->
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+
+
+
+<div class="row">
+            <img class="rounded-circle ml-2 mt-2" src="images/14.png" /> 
+            <p class="ml-2 mt-2">Dr.Ruby Perrin</p>
+           <i class="far fa-clock mt-2">4 Déc 2019</i>
+         </div>
+<div class="row">
+            <img class="rounded-circle ml-2 mt-2" src="images/15.png" /> 
+            <p class="ml-2 mt-2">Dr.Darren Elder</p>
+           <i class="far fa-clock mt-2">3 Déc 2019</i>
+         </div>
+<div class="row">
+            <img class="rounded-circle ml-2 mt-2" src="images/16.png" /> 
+            <p class="ml-2 mt-2">Dr.Deborah Angel</p>
+           <i class="far fa-clock mt-2">3 Déc 2019</i>
+         </div>
+
+
+
+
+
+
+
+
+
+
