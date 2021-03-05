@@ -1,0 +1,48 @@
+.headpremiereline{
+    background-color: #01242D;
+    color:white;
+}
+.headpremiereline .icbleu{
+    color: #0B77E3;
+}
+.headpremiereline .txt{
+    color: white;
+}
+.ico li{/* deuxieme liste avec les icones recherche et panier*/
+    background: transparent;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    
+    
+}
+.ico .lli{
+    border-right: none;
+}
+
+.headdeuxiemeline{
+    color:  #01242D;
+    
+}
+.headdeuxiemeline a{
+    color:  #01242D;
+    font-size: 18px;
+}
+.headtroisiemeline i{
+    
+    background:white;
+    
+    color:yellow;
+    
+}
+.ico-left{
+    float: right;
+}
+.hospi{
+    display: flex;
+    justify-content:right;
+}
+.etiquettephone{
+    background-color: #0B77E3;
+    min-height:70px
+}

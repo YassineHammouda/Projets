@@ -1,0 +1,20 @@
+
+/*.cf{
+    width:200px;
+}
+*/
+.car{
+    width:80px !important;
+    margin:5px !important;
+}
+h2,.nam{
+    color: #000080;
+}
+h5,p{
+    color: grey;
+}
+p{
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+
+}

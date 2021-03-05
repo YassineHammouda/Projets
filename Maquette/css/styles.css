@@ -1,14 +1,15 @@
 header {
   max-height: 100px !important;
 }
+.h2{
+  justify-content:space-between !important;
 
-header img {
-  width: 150px;
-  height: 100px;
 }
+header img {
+ width: 100px;}
 
-header button {
-  max-height: 50px;
+.bouthe {
+  max-height: 50px !important;
 }
 .nav-link {
   color: #4a6a8a;
@@ -19,11 +20,14 @@ header i {
 .sdma {
   background-image: url(../images/doc.jpg);
   min-height: 400px;
-}
-.fo {
-  justify-content: center;
+  
 }
 
+.fo{
+ justify-content:center !important;
+  
+  
+}
 .clisp {
   min-height: 300px;
   justify-content: center;
@@ -38,19 +42,13 @@ header i {
 .cs{
   justify-content:center;
 }
+.btbd{
+  justify-content: center;
+}
 .cs img.rounded-circle {
   border: 1px solid skyblue;
 }
-.image_outer_container .green_icon {
-  background-color: #4cd137;
-  position: absolute;
-  right: 30px;
-  bottom: 10px;
-  height: 30px;
-  width: 30px;
-  border: 5px solid white;
-  border-radius: 50%;
-}
+
 .carousel img {
   max-height: 100px;
 }
@@ -111,6 +109,7 @@ header i {
   font-size: 15px;
 }
 
+
 .blogs .carousel-indicators {
   left: 0;
   top: auto;
@@ -132,6 +131,19 @@ header i {
 #blogsCarousel {
   justify-content: right !important;
 }
+.ccd{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.dd{
+  
+  width:90px !important;
+}
+.afoc .dd p{
+ 
+  text-align: center;
+}
 .card {
   display: flex;
   justify-content: center;
@@ -151,8 +163,15 @@ header i {
 
 footer {
   color: white;
-  font-size: 11px;
+  font-size: 12px;
 }
+footer ul li{
+  list-style: none;
+}
+footer .a{
+  font-size:15px
+}
+
 
 #lt1 {
   justify-content: right;
@@ -160,6 +179,15 @@ footer {
 #lt1 li {
   background-color: transparent;
   border: none;
+}
+.indic{
+  bottom: -50px !important;
+}
+.indic li{
+  background-color: #1f72bb !important;
+  
+  width: 5px !important;
+height: 5px !important;
 }
 .indicateurs{
   bottom: -35px !important;
@@ -185,3 +213,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
   -webkit-text-fill-color: transparent;
 
 }
+
+
+
+/* media queries */
+@media (max-width: 575px) {
+
+}
+
