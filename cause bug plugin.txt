@@ -1,0 +1,4 @@
+les causes de fysfonctionnement d'un plugin
+1)les versions de jquery (sassurer que jquery est en pole position)
+2)un fichier qui manque
+3)un fichier qui cause un conflit (js et ou css)

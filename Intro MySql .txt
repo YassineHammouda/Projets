@@ -1,0 +1,8 @@
+Mysql est le sgbd en lui même il tourne en arriere plan / phpmyadmin est l'interface web qui nous permets de communiquer avec mysql.
+
+schéma :
+
+poste client -----> interroge le serveur d'appli --------------> qui lui interroge le server base de donné ------------> qui retourne les infos au serveur d'appli
+						<-------------------------------------------------------------------------------------------------
+															qui retourne au poste client les infos recue
+		<---------------------------------------------------------------------------------------------------------------------------
